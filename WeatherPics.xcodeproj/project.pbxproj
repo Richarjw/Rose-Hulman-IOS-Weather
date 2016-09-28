@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		433BEFF21D2F732C004A4589 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BEFF11D2F732C004A4589 /* AppDelegate.swift */; };
 		433BEFF51D2F732C004A4589 /* WeatherPics.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 433BEFF31D2F732C004A4589 /* WeatherPics.xcdatamodeld */; };
-		433BEFF71D2F732C004A4589 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BEFF61D2F732C004A4589 /* MasterViewController.swift */; };
-		433BEFF91D2F732C004A4589 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BEFF81D2F732C004A4589 /* DetailViewController.swift */; };
 		433BEFFC1D2F732C004A4589 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BEFFA1D2F732C004A4589 /* Main.storyboard */; };
 		433BEFFE1D2F732C004A4589 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433BEFFD1D2F732C004A4589 /* Assets.xcassets */; };
 		433BF0011D2F732C004A4589 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433BEFFF1D2F732C004A4589 /* LaunchScreen.storyboard */; };
 		433BF00C1D2F732C004A4589 /* WeatherPicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF00B1D2F732C004A4589 /* WeatherPicsTests.swift */; };
 		433BF0171D2F732C004A4589 /* WeatherPicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF0161D2F732C004A4589 /* WeatherPicsUITests.swift */; };
+		433BF0271D2FA86D004A4589 /* WeatherMasterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF0261D2FA86D004A4589 /* WeatherMasterTableViewController.swift */; };
+		433BF04A1D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 433BF0471D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.m */; };
+		433BF04B1D2FB5DC004A4589 /* WeatherImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 433BF0491D2FB5DC004A4589 /* WeatherImage.m */; };
+		433BF04D1D2FB753004A4589 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BF04C1D2FB753004A4589 /* WeatherDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		433BEFEE1D2F732C004A4589 /* WeatherPics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherPics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		433BEFF11D2F732C004A4589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		433BEFF41D2F732C004A4589 /* WeatherPics.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeatherPics.xcdatamodel; sourceTree = "<group>"; };
-		433BEFF61D2F732C004A4589 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		433BEFF81D2F732C004A4589 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		433BEFFB1D2F732C004A4589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		433BEFFD1D2F732C004A4589 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		433BF0001D2F732C004A4589 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,13 @@
 		433BF0121D2F732C004A4589 /* WeatherPicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherPicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		433BF0161D2F732C004A4589 /* WeatherPicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherPicsUITests.swift; sourceTree = "<group>"; };
 		433BF0181D2F732C004A4589 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		433BF0261D2FA86D004A4589 /* WeatherMasterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherMasterTableViewController.swift; sourceTree = "<group>"; };
+		433BF0451D2FB5DB004A4589 /* WeatherPics-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeatherPics-Bridging-Header.h"; sourceTree = "<group>"; };
+		433BF0461D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WeatherImage+CoreDataProperties.h"; sourceTree = "<group>"; };
+		433BF0471D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WeatherImage+CoreDataProperties.m"; sourceTree = "<group>"; };
+		433BF0481D2FB5DC004A4589 /* WeatherImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherImage.h; sourceTree = "<group>"; };
+		433BF0491D2FB5DC004A4589 /* WeatherImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherImage.m; sourceTree = "<group>"; };
+		433BF04C1D2FB753004A4589 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,13 +109,18 @@
 			isa = PBXGroup;
 			children = (
 				433BEFF11D2F732C004A4589 /* AppDelegate.swift */,
-				433BEFF61D2F732C004A4589 /* MasterViewController.swift */,
-				433BEFF81D2F732C004A4589 /* DetailViewController.swift */,
 				433BEFFA1D2F732C004A4589 /* Main.storyboard */,
 				433BEFFD1D2F732C004A4589 /* Assets.xcassets */,
 				433BEFFF1D2F732C004A4589 /* LaunchScreen.storyboard */,
 				433BF0021D2F732C004A4589 /* Info.plist */,
 				433BEFF31D2F732C004A4589 /* WeatherPics.xcdatamodeld */,
+				433BF0261D2FA86D004A4589 /* WeatherMasterTableViewController.swift */,
+				433BF04C1D2FB753004A4589 /* WeatherDetailViewController.swift */,
+				433BF0461D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.h */,
+				433BF0471D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.m */,
+				433BF0481D2FB5DC004A4589 /* WeatherImage.h */,
+				433BF0491D2FB5DC004A4589 /* WeatherImage.m */,
+				433BF0451D2FB5DB004A4589 /* WeatherPics-Bridging-Header.h */,
 			);
 			path = WeatherPics;
 			sourceTree = "<group>";
@@ -262,10 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433BF04D1D2FB753004A4589 /* WeatherDetailViewController.swift in Sources */,
 				433BEFF21D2F732C004A4589 /* AppDelegate.swift in Sources */,
+				433BF04B1D2FB5DC004A4589 /* WeatherImage.m in Sources */,
+				433BF0271D2FA86D004A4589 /* WeatherMasterTableViewController.swift in Sources */,
+				433BF04A1D2FB5DC004A4589 /* WeatherImage+CoreDataProperties.m in Sources */,
 				433BEFF51D2F732C004A4589 /* WeatherPics.xcdatamodeld in Sources */,
-				433BEFF71D2F732C004A4589 /* MasterViewController.swift in Sources */,
-				433BEFF91D2F732C004A4589 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,10 +423,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WeatherPics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rosehulman.WeatherPics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeatherPics/WeatherPics-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -420,10 +437,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WeatherPics/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.rosehulman.WeatherPics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeatherPics/WeatherPics-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -492,6 +511,7 @@
 				433BF01D1D2F732C004A4589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		433BF01E1D2F732C004A4589 /* Build configuration list for PBXNativeTarget "WeatherPicsTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +520,7 @@
 				433BF0201D2F732C004A4589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		433BF0211D2F732C004A4589 /* Build configuration list for PBXNativeTarget "WeatherPicsUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +529,7 @@
 				433BF0231D2F732C004A4589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
